@@ -7,3 +7,4 @@ require "core.packer_config.lsp.mason"
 require ("core.packer_config.lsp.handlers").setup()
 require "core.packer_config.lsp.null-ls"
 require ("core.packer_config.lsp.lsp-config")
+require ("core.packer_config.lsp.hover")

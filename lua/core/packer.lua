@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'akinsho/bufferline.nvim'
   use 'moll/vim-bbye'
+  use 'akinsho/toggleterm.nvim'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
@@ -50,6 +51,7 @@ return require('packer').startup(function(use)
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+  use 'lewis6991/hover.nvim'
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
