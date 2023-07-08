@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'lewis6991/gitsigns.nvim'
+  use 'akinsho/bufferline.nvim'
+  use 'moll/vim-bbye'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
