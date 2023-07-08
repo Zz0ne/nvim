@@ -17,6 +17,9 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'lewis6991/gitsigns.nvim'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
