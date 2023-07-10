@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     use 'akinsho/bufferline.nvim'
     use 'moll/vim-bbye'
     use 'akinsho/toggleterm.nvim'
+    use 'xiyaowong/transparent.nvim'
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.0',
@@ -31,7 +32,8 @@ return require('packer').startup(function(use)
 
     -- Color schemes
     use "olimorris/onedarkpro.nvim"
-    use 'ellisonleao/gruvbox.nvim'
+    use 'ellisonleao/gruvbox.nvim' 
+    use 'folke/tokyonight.nvim'
 
     -- Auto Complete plugins
     use 'hrsh7th/nvim-cmp'
