@@ -1,8 +1,8 @@
 local ensure_packer = function()
     local fn = vim.fn
-    local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+    local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
     if fn.empty(fn.glob(install_path)) > 0 then
-        fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+        fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
         vim.cmd [[packadd packer.nvim]]
         return true
     end
@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.0',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     -- Color schemes
@@ -50,10 +50,11 @@ return require('packer').startup(function(use)
     use 'rafamadriz/friendly-snippets'
 
     -- LSP
-    use "neovim/nvim-lspconfig" -- enable LSP
-    use "williamboman/mason.nvim" -- simple to use language server installer
+    use "neovim/nvim-lspconfig"             -- enable LSP
+    use "williamboman/mason.nvim"           -- simple to use language server installer
     use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-    use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+    use 'jose-elias-alvarez/null-ls.nvim'   -- LSP diagnostics and code actions
+    use "RRethy/vim-illumiate"
     use 'lewis6991/hover.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
