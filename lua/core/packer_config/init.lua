@@ -10,5 +10,6 @@ require("core.packer_config.gitsigns")
 require("core.packer_config.bufferline")
 require("core.packer_config.toggleterm")
 require("core.packer_config.transparent")
+require("core.packer_config.cursorline")
 
 require("core.packer_config.lsp")

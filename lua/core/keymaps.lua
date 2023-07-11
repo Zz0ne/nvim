@@ -95,3 +95,15 @@ keymap("n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", o
 keymap("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 keymap("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 keymap("n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+
+-- Debugging --
+keymap("n", "<F5>", "<Cmd>lua require'dap'.continue()<CR>", opts)
+keymap("n", "<F10>", "<Cmd>lua require'dap'.step_over()<CR>", opts)
+keymap("n", "<F11>", "<Cmd>lua require'dap'.step_into()<CR>", opts)
+keymap("n", "<F12>", "<Cmd>lua require'dap'.step_out()<CR>", opts)
+keymap("n", "<leader>ds", "<cmd>lua start_debug()<CR>", opts)
+keymap("n", "<Leader>db", "<Cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap("n", "<Leader>dB", "<Cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", opts)
+keymap("n", "<Leader>lp", "<Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", opts)
+keymap("n", "<Leader>dr", "<Cmd>lua require'dap'.repl.open()<CR>", opts)
+keymap("n", "<Leader>dl", "<Cmd>lua require'dap'.run_last()<CR>", opts)
