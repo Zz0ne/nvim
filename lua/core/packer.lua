@@ -23,7 +23,6 @@ return require("packer").startup(function(use)
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
 	use("akinsho/toggleterm.nvim")
-	use("xiyaowong/transparent.nvim")
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
