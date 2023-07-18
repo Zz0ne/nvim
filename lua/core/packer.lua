@@ -56,7 +56,10 @@ return require("packer").startup(function(use)
 	use("lewis6991/hover.nvim")
 	use("yamatsum/nvim-cursorline")
 	use("mfussenegger/nvim-dap")
-	use("jay-babu/mason-nvim-dap.nvim")
+	use({
+		"jay-babu/mason-nvim-dap.nvim",
+		requires = { "williamboman/mason.nvim", "mfussenegger/nvim-dap" },
+	})
 	use({
 		"rcarriga/nvim-dap-ui",
 		requires = { "mfussenegger/nvim-dap" },
