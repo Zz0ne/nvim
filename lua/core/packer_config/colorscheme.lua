@@ -1,3 +1,3 @@
--- vim.cmd [[ colorscheme tokyonight]]
+vim.cmd [[ colorscheme tokyonight]]
 -- vim.cmd [[ colorscheme gruvbox]]
-vim.cmd [[ colorscheme onedark]]
+-- vim.cmd [[ colorscheme onedark]]

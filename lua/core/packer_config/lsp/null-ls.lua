@@ -16,10 +16,6 @@ null_ls.setup({
         formatting.clang_format,
         formatting.stylua,
         diagnostics.flake8,
-        diagnostics.cpplint,
     },
 })
 
-vim.cmd([[
-  autocmd BufWritePre *.cpp,*.hpp,*.c,*.h lua vim.lsp.buf.format()
-]])
